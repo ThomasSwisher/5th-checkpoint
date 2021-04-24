@@ -14,7 +14,7 @@ import Notification from '../utils/Notification'
 import { postsService } from '../services/PostsService'
 import { AppState } from '../AppState'
 export default {
-  name: 'Posts',
+  name: 'AllPostPage',
   setup() {
     const state = reactive({
       posts: computed(() => AppState.posts)

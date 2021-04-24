@@ -1,14 +1,14 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-white">
-    <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
-      <div class="d-flex flex-column align-items-center">
-        <img
-          alt="logo"
-          src="../assets/img/the-network.png"
-          height="75"
-        />
-      </div>
-    </router-link>
+    <!-- <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }"> -->
+    <div class="d-flex flex-column align-items-center">
+      <img
+        alt="logo"
+        src="../assets/img/the-network.png"
+        height="75"
+      />
+    </div>
+    <!-- </router-link> -->
     <button
       class="navbar-toggler"
       type="button"
@@ -23,14 +23,14 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <router-link :to="{ name: 'Home' }" class="nav-link">
-            Home
-          </router-link>
+          <!-- <router-link :to="{ name: 'Home' }" class="nav-link"> -->
+          Home
+          <!-- </router-link> -->
         </li>
         <li class="nav-item">
-          <router-link :to="{ name: 'About' }" class="nav-link">
-            About
-          </router-link>
+          <!-- <router-link :to="{ name: 'About' }" class="nav-link"> -->
+          About
+          <!-- </router-link> -->
         </li>
       </ul>
       <span class="navbar-text">
@@ -60,11 +60,11 @@
             :class="{ show: state.dropOpen }"
             @click="state.dropOpen = false"
           >
-            <router-link :to="{ name: 'Account' }">
-              <div class="list-group-item list-group-item-action hoverable">
-                Account
-              </div>
-            </router-link>
+            <!-- <router-link :to="{ name: 'Account' }"> -->
+            <div class="list-group-item list-group-item-action hoverable">
+              Account
+            </div>
+            <!-- </router-link> -->
             <div
               class="list-group-item list-group-item-action hoverable"
               @click="logout"

@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import { authGuard } from '@bcwdev/auth0provider-client'
+// import { authGuard } from '@bcwdev/auth0provider-client'
 
 function loadPage(page) {
   return () => import(`./pages/${page}.vue`)
@@ -8,24 +8,25 @@ function loadPage(page) {
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: loadPage('HomePage')
+    name: 'AllPostPage',
+    component: loadPage('AllPostPage')
   },
   {
     path: '/about',
     name: 'About',
     component: loadPage('AboutPage')
   },
+  // {
+  //   path: '/posts',
+  //   name: 'Posts',
+  //   component: loadPage('AllPostPage')
+  // },
   {
-    path: '/posts',
-    name: 'Posts',
-    component: loadPage('AllPostPage')
-  },
-  {
-    path: '/account',
+    path: '/profile/:id',
     name: 'Account',
-    component: loadPage('AccountPage'),
-    beforeEnter: authGuard
+    component: loadPage('AccountPage')
+  // NOTE this line prevents the user from loading this page if they are not loggedin
+  // beforeEnter: authGuard
   }
 ]
 
