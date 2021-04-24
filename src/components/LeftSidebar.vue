@@ -34,9 +34,12 @@ img {
   flex-direction: column;
   align-items: center;
   background-color: white;
-  width: 200px;
   margin-top: 25px;
   min-height: 80vh;
+  margin: 20px;
+  -webkit-box-shadow: 5px 5px 15px 5px #878787;
+  box-shadow: 5px 5px 15px 5px #878787;
+  padding: 20px;
 }
 
 .left-sidebar {
