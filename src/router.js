@@ -22,7 +22,7 @@ const routes = [
   //   component: loadPage('AllPostPage')
   // },
   {
-    path: '/profile/:id',
+    path: '/account',
     name: 'Account',
     component: loadPage('AccountPage')
   // NOTE this line prevents the user from loading this page if they are not loggedin

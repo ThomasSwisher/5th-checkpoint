@@ -2,12 +2,12 @@
   <div class="row post-styling">
     <div class="col">
       <!-- <div class=" position-relative"> -->
-      <!-- <router-link :to="{name: 'ProjectDetails', params: {id: project.id}}"> -->
-      <p>{{ post.creator.name }}</p>
-      <img class="rounded-circle small-img position-absolute" :src="post.creator.picture" alt="Creator Photo">
-      <div class="text-left">
-      </div>
-      <!-- </router-link> -->
+      <router-link :to="{name: 'Account'}">
+        <p>{{ post.creator.name }}</p>
+        <img class="rounded-circle small-img position-absolute" :src="post.creator.picture" alt="Creator Photo">
+        <div class="text-left">
+        </div>
+      </router-link>
     </div>
     <div class="col">
       <p>{{ post.body }}</p>

@@ -14,14 +14,15 @@ class PostsService {
     // console.log(res.data)
   }
 
-  async getMyProjects() {
+  async getMyPosts() {
     const res = await api.get(`api/posts?creatorId=${AppState.account.id}`)
     AppState.myProjects = res.data
   }
 
   async getByProfileId(id) {
     const res = await api.get(`api/posts?creatorId=${id}`)
-    AppState.activeProjects = res.data
+    AppState.activePosts = res.data
+  // console.log(res.data)
   }
 
   // async create(data) {

@@ -52,7 +52,7 @@
 import { computed, onMounted, reactive } from 'vue'
 import { AppState } from '../AppState'
 import { postsService } from '../services/PostsService'
-import { accountService } from '../services/AccountService'
+// import { accountService } from '../services/AccountService'
 import Notification from '../utils/Notification'
 import { logger } from '../utils/Logger'
 import { useRoute } from 'vue-router'
@@ -62,7 +62,7 @@ export default {
     const route = useRoute()
     const state = reactive({
       newPost: {},
-      account: computed(() => AppState.account),
+      // account: computed(() => AppState.account),
       user: computed(() => AppState.user),
       activePosts: computed(() => AppState.activePosts),
       activeProfile: computed(() => AppState.activeProfile)
@@ -70,7 +70,7 @@ export default {
 
     onMounted(async() => {
       await postsService.getByProfileId(route.params.id)
-      await accountService.getProfile(route.params.id)
+    //  await accountService.getProfile(route.params.id)
     })
 
     return {
