@@ -2,7 +2,8 @@
   <div class="right-sidebar">
     <div class="side-bar-container">
       <div>
-        {{ state.rightSidebar.tall }}
+        <img class="rounded-circle" :src="state.Rightsidebar[0].tall">
+        <!-- v-if= @0 !== null -->
       </div>
     </div>
   </div>
@@ -20,7 +21,7 @@ export default {
     })
 
     onMounted(async() => {
-      await postsService.getAds()
+      await postsService.getRightside()
     })
 
     return { state }

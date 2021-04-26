@@ -2,7 +2,7 @@
   <div class="row post-styling">
     <div class="col">
       <!-- <div class=" position-relative"> -->
-      <router-link :to="{name: 'Account'}">
+      <router-link :to="{ name: 'AccountPage', params: {id: post.id}}">
         <p>{{ post.creator.name }}</p>
         <img class="rounded-circle small-img position-absolute" :src="post.creator.picture" alt="Creator Photo">
         <div class="text-left">
@@ -17,7 +17,7 @@
         <img alt="Likes" src="../assets/img/heart.png" height="15" />
       </button>
       <div>
-        LikesHere {{}}
+        LikesHere {{ post.likeIds }}
       </div>
     </div>
   </div>

@@ -61,7 +61,7 @@ export default {
   setup() {
     const route = useRoute()
     const state = reactive({
-      newPost: {},
+      // newPost: {},
       // account: computed(() => AppState.account),
       user: computed(() => AppState.user),
       activePosts: computed(() => AppState.activePosts),

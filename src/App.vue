@@ -11,7 +11,7 @@
         <router-view />
       </div>
       <div class="col-3">
-        RightSidebar
+        <RightSidebar />
       </div>
     </div>
   </main>

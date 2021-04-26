@@ -25,7 +25,7 @@ export default {
 
 <style lang="scss" scoped>
 img {
-  width: 20vh;
+  max-width: 8vh;
   margin-top: 2vh;
 }
 
@@ -35,11 +35,12 @@ img {
   align-items: center;
   background-color: white;
   margin-top: 25px;
-  min-height: 80vh;
+  min-height: 45vh;
   margin: 20px;
   -webkit-box-shadow: 5px 5px 15px 5px #878787;
   box-shadow: 5px 5px 15px 5px #878787;
   padding: 20px;
+  min-width: 17vh;
 }
 
 .left-sidebar {

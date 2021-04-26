@@ -22,8 +22,8 @@ const routes = [
   //   component: loadPage('AllPostPage')
   // },
   {
-    path: '/account',
-    name: 'Account',
+    path: '/profile/:id',
+    name: 'AccountPage',
     component: loadPage('AccountPage')
   // NOTE this line prevents the user from loading this page if they are not loggedin
   // beforeEnter: authGuard
